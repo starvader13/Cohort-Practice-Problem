@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculator</title>
+</head>
+<body>
+    <label for="firstValue">First Number: </label> <input type="number" id="firstValue" placeholder="0">
+    <br><br>
+    <label for="secondValue">Second Number: </label> <input type="number" id="secondValue" placeholder="0">
+    <br><br>
+    <button onClick="calculateSum()">Calculate</button>
+    <br><br>
+
+    <p id="para"></p>
+
+    <script>
+        async function calculateSum(){
+            const firstValue = document.querySelector("#firstValue").value;
+            const secondValue = document.querySelector("#secondValue").value;
+
+            const response = await fetch(`http://127.0.0.1:3000/sum?a=${firstValue}&b=${secondValue}`);
+            const result = await response.text();
+
+            const paragraph = document.getElementById("para");
+            paragraph.innerHTML = "The result is " + result;
+        }
+    </script>
+</body>
+</html>

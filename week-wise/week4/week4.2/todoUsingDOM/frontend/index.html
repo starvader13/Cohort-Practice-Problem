@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>TODO app</title>
+    <style>
+        .container{
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="input" class="container">
+        <label for="title">Todo Title: </label> <input type="text" id="title" placeholder="Enter Todo Title">
+        <br><br>
+        <label for="description">Todo Description: </label> <input type="text" id="description" placeholder="Enter Todo Description">
+    </div>
+
+    <div id="inputButton" class="container">
+        <button onclick="saveTodo()">Add todo</button>
+    </div>
+
+    <div id="todoList" class="container"> </div>
+
+    <script src="createElement.js"> </script>
+</body>
+</html>

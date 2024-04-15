@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Interest Calculator</title>
+    </head>
+    <body>
+        <label for="principal">Principal Amount: </label> <input oninput="debounceCalculateInterest()" type="number" id="principal" placeholder="0">
+        <br><br>
+        <label for="rate">Rate Of Interest: </label> <input oninput="debounceCalculateInterest()" type="number" id="rate" placeholder="0">
+        <br><br>
+        <label for="time">Time(in years): </label> <input oninput="debounceCalculateInterest()" type="number" id="time" placeholder="0">
+        <br><br>
+
+        <p id="para"></p>
+
+        <script src="script.js"></script>
+    </body>
+</html>
