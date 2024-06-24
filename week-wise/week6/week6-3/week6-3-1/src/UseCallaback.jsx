@@ -26,7 +26,7 @@ function UseCallback(){
     }, []);
 
     // useCallback is not about the minimizing the amount of code that is run
-    // useCallback is about not rendering a child component, if the function hasn't/doesn't need to change across renders
+    // useCallback is about not rendering a child components, if the function hasn't/doesn't need to change across renders
 
     const calculateCryptoReturns =useCallback( ()=>{
         return exchange1Data.returns + exchange2Data.returns;

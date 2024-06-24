@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-// import {Todo} from "./components/Todo.jsx";
+// import {Todo} from "./sections/Todo.jsx";
 
 // let counter = 4;
 
